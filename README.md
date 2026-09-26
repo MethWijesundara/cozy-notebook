@@ -8,7 +8,7 @@
 
 
 ## About
-I created this small notes application to jot down my thoughts. I don't think I'm going to use it much though :).
+Created this notes application to jot down small bits of thoughts and tasks I'm completing - even thought I might not use as much as my main note-taking app. :)
 
 ## Built with
 I'm building this using HTML, CSS, JavaScript and Python (Flask). 
