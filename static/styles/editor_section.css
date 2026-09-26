@@ -1,0 +1,70 @@
+.notebook-container{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    flex-wrap: wrap;
+}
+
+.editor-panel, .notes-panel{
+    background: var(--card-bg);
+    border: 3px dashed var(--primary-green);
+    border-radius: var(--border-radius);
+    padding: 1.2rem;
+    flex: 1;
+    min-width: 280px;
+    box-shadow: 0 8px 20px rgba(183, 255, 201, 0.2);
+
+}
+
+input, textarea{
+    width: 100%;
+    border: 2px solid #d6ffd1;
+    border-radius: 12px;
+    padding: 0.6rem;
+    margin-bottom: 0.8rem;
+    font-family: 'Quicksand', sans-serif;
+    background: #fff;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input:focus, textarea:focus{
+    border-color: #70d885;
+}
+
+button{
+    /* colors */
+    background-color: var(--primary-green);
+    color: white;
+
+    /* border */
+    border:none;
+    border-radius: 12px;
+
+    /* padding */
+    padding: 0.6rem 1.2rem;
+
+    /* font */
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+
+    /* other */
+    cursor: pointer;
+    transition: transform 0.1 ease, background-color 0.2s ease;
+
+}
+
+button:hover{
+    background-color: #70d885;
+    transform: scale(1.03);
+}
+
+#noteDate{
+    color: rgba(0,0,0,0.5);
+}
+
+.dateNotice{
+    font-size: 0.8rem;
+    font-style: italic;
+}

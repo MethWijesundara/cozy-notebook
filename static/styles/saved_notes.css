@@ -1,0 +1,47 @@
+.notes-panel{
+    max-height: 500px;
+    overflow: auto;
+    padding: 1rem;
+}
+
+.notes-list{
+    max-height: 400px;
+    overflow-y: auto;
+    border-radius: 14px;
+}
+
+.note-card{
+    background: var(--accent-yellow);
+    border-radius: 14px;
+    padding: 0.6rem;
+    margin-bottom: 0.6rem;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.note-card h3{
+    margin: 0 0 0.2rem 0;
+    color: #b8860b;
+}
+
+.note-card p{
+    margin: 1rem;
+    font-size: 0.95rem;
+    white-space: pre-wrap;
+}
+
+.delete-btn{
+    background: #ff6b6b;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+
+    transition: all 0.2s ease;
+}
+
+.delete-btn:hover{
+    background-color: #d87070;
+    transform: scale(1.03);
+}

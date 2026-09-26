@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Notebook 🍡</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- importing CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/editor_section.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/saved_notes.css') }}">
+
+    
+    
+</head>
+<body>
+    
+    <header>
+        <h1>🌟 Cozy Notebook🪴</h1>
+        <p>A warm little space for your ambitious thoughts and ideas ~ </p>
+    </header>
+    
+    <div class="notebook-container">
+        
+        <!-- Editor -->
+        <div class="editor-panel">
+            <h3>New Note</h3>
+            <input type="text" id="noteTitle" placeholder="Note title...">
+            <p class="dateNotice">*Date is optional</p>
+            <input type="date" id="noteDate">
+            <textarea id="noteContent" rows="5" placeholder="Write something.."></textarea>
+            <button onclick="createNote()">Save Note</button>
+        </div>
+
+        <!-- Saved notes -->
+        <div class="notes-panel">
+            <h3> My Notebook </h3>
+
+            <div class="notes-list">
+                <div id="notesList"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+</body>
+</html>
